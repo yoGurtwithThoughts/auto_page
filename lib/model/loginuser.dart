@@ -1,5 +1,7 @@
+import 'package:auto_page/autorised.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
 void main() async {
 await Supabase.initialize(
   url: 'https://hyknbwhwrzrcjgefpvhv.supabase.co',
@@ -59,7 +61,11 @@ final TextEditingController _loginController = TextEditingController();
             ),
            SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () ,
+              onPressed: () async {
+             //  Navigator.push(
+             // context,
+             // MaterialPageRoute(builder: (context) => AutorisedPage(),),);
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.brown,
                 textStyle: TextStyle(
