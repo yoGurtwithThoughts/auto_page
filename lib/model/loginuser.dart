@@ -57,7 +57,21 @@ final TextEditingController _loginController = TextEditingController();
              ),
               
             ),
-           
+           SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () ,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.brown,
+                textStyle: TextStyle(
+                  fontSize: 18.0,
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+              child: Text('Register'),
+            ),
         ],
         ),
       );
@@ -81,5 +95,5 @@ final TextEditingController _loginController = TextEditingController();
       print('Данные успешно сохранены!');
     }
   }
-  
+ 
 }
