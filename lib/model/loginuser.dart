@@ -16,7 +16,7 @@ class LoginUser extends StatefulWidget{
 class _LoginUserState extends State<LoginUser> {
 final TextEditingController _loginController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  get supabase => null;
+  get supabase =>null;
   @override
   Widget build (BuildContext context){
     return Scaffold(
